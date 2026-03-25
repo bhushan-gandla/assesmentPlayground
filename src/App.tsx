@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
-import NewsFeed from './pages/newsFeed'
+import TaskManager from './pages/taskManager'
+
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/newsFeed' element={<NewsFeed/>}></Route>
+        <Route path='/taskManager' element={<TaskManager/>}></Route>
       </Routes>
     </BrowserRouter>
   )

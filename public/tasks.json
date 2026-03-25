@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "todo": "Design onboarding modal",
+        "completed": false,
+        "priority": "medium"
+    },
+    {
+        "id": 2,
+        "todo": "Fix mobile navbar overflow",
+        "completed": true,
+        "priority": "high"
+    },
+    {
+        "id": 3,
+        "todo": "Write unit tests for task form",
+        "completed": false,
+        "priority": "low"
+    }
+]
