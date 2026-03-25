@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
-import NewsFeed from './pages/newsFeed'
+import Pokemon from './pages/pokemon'
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/newsFeed' element={<NewsFeed/>}></Route>
+        <Route path='/pokemon' element={<Pokemon/>}></Route>
       </Routes>
     </BrowserRouter>
   )
