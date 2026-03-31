@@ -88,3 +88,23 @@ select {
 .filter-wrapper{
      padding: 1rem 1rem 0 1rem;
 }
+
+
+// tooltip
+
+.tooltip-wrapper{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    .tooltip-content{
+        position: absolute;
+        top: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        min-width: 100px;
+        padding: 10px;
+        border-radius: 3px;
+    }
+}
+

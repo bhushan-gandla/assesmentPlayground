@@ -4,6 +4,7 @@
 
 import { useEffect, useMemo, useState } from "react"
 import type { PokemonResults } from "../models/pokemon.models"
+import Tooltip from "../components/tooltip";
 
 const pokemonDetailsUrl = function (name: string){
     return "https://pokeapi.co/api/v2/pokemon/"+`${name}`
@@ -85,9 +86,11 @@ export default function Pokemon() {
 
     return (
         <>
+          
             {error && <p>Error fetching pokemons</p>}
 
             <div className="filter-wrapper">
+                  <Tooltip/>
                 <input
                     type="text"
                     placeholder="Search pokemons"
