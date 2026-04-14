@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/newsFeed' element={<NewsFeed/>}></Route>
+        <Route path='/news' element={<NewsFeed/>}></Route>
       </Routes>
     </BrowserRouter>
   )
