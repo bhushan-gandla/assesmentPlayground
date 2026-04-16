@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
-import NewsFeed from './pages/newsFeed'
+import CheckList from './pages/checkList'
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/newsFeed' element={<NewsFeed/>}></Route>
+        <Route path='/checklist' element={<CheckList/>}></Route>
       </Routes>
     </BrowserRouter>
   )

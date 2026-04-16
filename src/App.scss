@@ -107,3 +107,18 @@ select {
         border-radius: 3px;
     }
 }
+
+// checkbox 
+label:has(input){
+    display: flex;
+    justify-content: flex-start;
+   input{
+    flex-shrink: 1;
+    flex-grow: 0;
+    width: auto;
+   }
+   span{
+    flex-grow: 1;
+    flex-shrink: 0;
+   }
+}
