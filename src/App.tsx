@@ -1,16 +1,26 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.scss'
-import NewsFeed from './pages/newsFeed'
+import { useState } from "react"
 
+const inputArray = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
 
 function App() {
 
+  function consolidateArrayItems(){
+    const result = new Set();
+
+    inputArray.map((a) => {
+
+      if(result.has(a)){
+        result[a] += 1;
+      }else{
+        result.add({a: 1})
+      }
+    })
+
+  }
+  
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/newsFeed' element={<NewsFeed/>}></Route>
-      </Routes>
-    </BrowserRouter>
+    
   )
 }
 
